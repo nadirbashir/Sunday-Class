@@ -1,9 +1,16 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 function Home() {
   const router = useRouter();
-
+  useEffect(()=>{
+    
+fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(json => console.log(json))
+            
+  },[])
   const gotoAboutPage = () => {
     // router.push('/about');
     router.push({
