@@ -7,8 +7,8 @@ export default function handler(req, res) {
   }
   if (req.method === "POST") {
     const { title, price, description } = req.body;
-    const isAdded = addProduct(title, price, description);
-    return res.status(201).json(isAdded);
+    const updatedProducts = addProduct(title, price, description);
+    return res.status(201).json(updatedProducts);
   }
   return res.status(404).json({ message: "Not found" });
 }

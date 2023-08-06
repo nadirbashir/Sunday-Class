@@ -16,13 +16,13 @@ export function getProductById(id) {
 
 export function addProduct(title, price, description) {
   const { products } = getAllProducts();
-  const updatedProducts = products.push({
+  products.push({
     id: products.length + 1,
     title,
     price,
     description,
   });
-  fs.writeFileSync(filePath, JSON.stringify(updatedProducts));
+  fs.writeFileSync(filePath, JSON.stringify({ products }));
 
-  return updatedProducts;
+  return products;
 }

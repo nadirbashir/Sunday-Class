@@ -21,7 +21,6 @@ function NewProduct() {
       return;
     }
     const newProduct = JSON.stringify({ title, price, description });
-    console.log(title, price, description);
     fetch("/api/products/", {
       method: "POST",
       body: newProduct,
