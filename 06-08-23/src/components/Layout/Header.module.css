@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 10%;
+    background-color: #202020;
+  }
+  
+  .logo {
+    font-family: 'Fira', sans-serif;
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdf494;
+  }
+  
+  .logo a {
+    color: #fdf494;
+    text-decoration: none;
+  }
+  
+  .navigation a {
+    font-size: 1rem;
+    color: #fdf494;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .navigation a {
+      font-size: 1.5rem;
+    }
+    .logo {
+      font-size: 2.5rem;
+    }
+  
+  }
