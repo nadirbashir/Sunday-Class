@@ -1,0 +1,12 @@
+.todo-card{
+    width: 40%;
+    margin: 5px auto;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px #000;
+    padding: 10px 20px;
+}
+
+.todo-card > p {
+    font-weight: 500;
+    font-size: 16px;
+}
