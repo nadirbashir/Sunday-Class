@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create product</title>
+  </head>
+  <body>
+    <form action="/products/<%=id%>?_method=PATCH" method="POST">
+      <label for="product">change Product name</label>
+      <input id="product" type="text" name="updatedname" />
+      <button>update Product</button>
+    </form>
+  </body>
+</html>
