@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Products Details</p>
+    <ul>
+      <% for(let p of products) {%>
+      <li><%= p.title%></li>
+      <a href="/products/update/<%=p.id %>">edit</a>
+      <% }%>
+    </ul>
+  </body>
+</html>
